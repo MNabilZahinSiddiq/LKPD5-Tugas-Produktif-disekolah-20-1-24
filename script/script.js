@@ -24,17 +24,17 @@ for (let bilangan4 = 1; bilangan4 <= 50; bilangan4++) {
 }
 
 // No.5
-var bilangan = [];
+let bilangan = [];
 
-for (var i = 0; i < 20; i++) {
-    var input = parseFloat(prompt("Masukkan bilangan ke-" + (i + 1) + ":"));
+for (let i = 0; i < 20; i++) {
+    let input = parseFloat(prompt("Masukkan bilangan ke-" + (i + 1) + ":"));
     bilangan.push(input);
 }
-var terbesar = bilangan[0];
-var terkecil = bilangan[0];
-var total = bilangan[0];
+let terbesar = bilangan[0];
+let terkecil = bilangan[0];
+let total = bilangan[0];
 
-for (var i = 1; i < bilangan.length; i++) {
+for (let i = 1; i < 20; i++) {
     if (bilangan[i] > terbesar) {
         terbesar = bilangan[i];
     }
@@ -46,7 +46,7 @@ for (var i = 1; i < bilangan.length; i++) {
     total += bilangan[i];
 }
 
-var rataRata = total / bilangan.length;
+let rataRata = total / 20;
 
 console.log("Bilangan Terbesar: " + terbesar);
 console.log("Bilangan Terkecil: " + terkecil);
